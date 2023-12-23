@@ -4,7 +4,7 @@
 ## Overview
 
 ---
-CocktailMe is a mobile application that offers personalized cocktail suggestions based on user preferences. 
+CocktailMe is an application that offers personalized cocktail suggestions based on user preferences. 
 
 This application enables users to decide between alcoholic or non-alcoholic options, discover similar drinks through the names of their favorite cocktails, and receive personalized cocktail recommendations by specifying whether they want certain ingredients to be included or excluded in their drinks.
 
