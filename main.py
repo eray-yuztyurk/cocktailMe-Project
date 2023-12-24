@@ -149,7 +149,7 @@ img_cf.image("img/ai/ai_welcomes_r.jpeg", use_column_width=True)
 
 right_container = right_side.container(border=True)
 
-cocktail_type = right_container.radio("Which drink journey would you like to embark on?", options=["Enjoy a spirited adventure with an :red[Alcoholic] Delight 🍸", "Savor the crisp taste of a :green[Non-alcoholic] Refresher 🍹"], index=None)
+cocktail_type = right_container.radio("Which drink journey would you like to embark on?", options=["Enjoy a spirited adventure with an :red[Alcoholic] Delight 🍸", "Savor the crisp taste of a :green[Non-alcoholic] Refresher 🍹"], index=0)
 
 if cocktail_type == "Enjoy a spirited adventure with an :red[Alcoholic] Delight 🍸":
     st.toast(":red[Alcoholic] Delights are selected", icon='👍🏼')
@@ -198,7 +198,7 @@ right_container.divider()
 right_options, left_options = right_container.columns(2)
 
 #-- search type checkboxes
-search_type = right_options.radio("Let's shake things up in a few ways:", options=["Pick a Cocktail Buddy!️", "Ingredients, Anyone?"], index=None)
+search_type = right_options.radio("Let's shake things up in a few ways:", options=["Pick a Cocktail Buddy!️", "Ingredients, Anyone?"], index=0)
 right_container.divider()
 
 if search_type == "Pick a Cocktail Buddy!️":
@@ -684,8 +684,6 @@ if list_button:
 ########################################################################################################################
 #-------------- MEASUREMENTS SECTION ----------------------------------------------------------------------------------#
 ########################################################################################################################
-cocktail_type = None
-search_type = None
 left_m, right_m, right_me = measurement.columns([2, 1, 2])
 m_info1 = left_m.container(border=True)
 m_converter = right_m.container(border=True)
