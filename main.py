@@ -34,8 +34,8 @@ style = """
 
 st.markdown(style, unsafe_allow_html=True)
 
-logo = st.container(border=True)
-logo.image("img/cocktailMe_logo.png", use_column_width=100)
+#logo = st.container(border=True)
+st.image("img/cocktailMe_logo.png", use_column_width=100)
 welcome, cocktail_finder, measurement = st.tabs(["Welcome", "Cocktail Finder", "Measurements"])
 
 ########################################################################################################################
