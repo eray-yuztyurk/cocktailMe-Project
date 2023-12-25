@@ -33,8 +33,7 @@ style = """
 """
 spotify = '''
 <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6syac0fWYdV?si=3d459fa762804978" 
-        width="600" 
-        height="106" 
+        style="width:100%; height:106px; border:0;"
         frameborder="0" 
         allowtransparency="true" 
         allow="encrypted-media">
