@@ -31,7 +31,15 @@ style = """
     }
 </style>
 """
-
+spotify = '''
+<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6syac0fWYdV?si=3d459fa762804978" 
+        width="600" 
+        height="106" 
+        frameborder="0" 
+        allowtransparency="true" 
+        allow="encrypted-media">
+</iframe>
+'''
 st.markdown(style, unsafe_allow_html=True)
 
 logo = st.container(border=True)
@@ -56,6 +64,7 @@ cocktails_df = load_data()
 #- containers
 left_side, right_side = welcome.columns([2, 2])
 left_container = left_side.container(border=True)
+left_container2 = left_side.container(border=True)
 right_container = right_side.container(border=True)
 
 #- containers' contents
@@ -129,6 +138,7 @@ for word in welcome_text5.split():
     time.sleep(0.01)
 time.sleep(0.2)
 st.container()
+left_container2.markdown(spotify, unsafe_allow_html=True)
 
 ########################################################################################################################
 #-------------- COCKTAIL FINDER SECTION -------------------------------------------------------------------------------#
