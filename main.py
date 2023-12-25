@@ -152,13 +152,13 @@ right_container = right_side.container(border=True)
 cocktail_type = right_container.radio("Which drink journey would you like to embark on?", options=["Enjoy a spirited adventure with an :red[Alcoholic] Delight 🍸", "Savor the crisp taste of a :green[Non-alcoholic] Refresher 🍹"], index=0)
 
 if cocktail_type == "Enjoy a spirited adventure with an :red[Alcoholic] Delight 🍸":
-    st.toast(":red[Alcoholic] Delights are selected", icon='👍🏼')
+    #st.toast(":red[Alcoholic] Delights are selected", icon='👍🏼')
     img_cf.image("img/ai/ai_cheers1_1_r.jpg", use_column_width=True)
     time.sleep(0.2)
     cocktail_df = cocktails_df[cocktails_df["alcoholic"] == "Alcoholic"]
 
 elif cocktail_type == "Savor the crisp taste of a :green[Non-alcoholic] Refresher 🍹":
-    st.toast(":green[Non-alcoholic] Refresher are selected", icon='👍🏼')
+    #st.toast(":green[Non-alcoholic] Refresher are selected", icon='👍🏼')
     img_cf.image("img/ai/ai_cheers1_2_r.jpg", use_column_width=True)
     time.sleep(0.2)
     cocktail_df = cocktails_df[cocktails_df["alcoholic"] == "Non alcoholic"]
@@ -202,7 +202,7 @@ search_type = right_options.radio("Let's shake things up in a few ways:", option
 right_container.divider()
 
 if search_type == "Pick a Cocktail Buddy!️":
-    st.toast("**Search for similar cocktails** is activated", icon='👍🏼')
+    #st.toast("**Search for similar cocktails** is activated", icon='👍🏼')
     img_cf.image("img/ai/ai_waits2_r.jpg", use_column_width=True)
     time.sleep(0.2)
 
@@ -217,7 +217,7 @@ if search_type == "Pick a Cocktail Buddy!️":
     right_container.divider()
 
 elif search_type == "Ingredients, Anyone?":
-    st.toast("**Search with ingredients** is activated", icon='👍🏼')
+    #st.toast("**Search with ingredients** is activated", icon='👍🏼')
     img_cf.image("img/ai/ai_waits1_r.jpg", use_column_width=True)
     time.sleep(0.2)
 
